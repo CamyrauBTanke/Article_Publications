@@ -1,0 +1,69 @@
+.header{
+    position: relative;
+    z-index: 900;
+    background-color: $card-3-color;
+    border-bottom: 4px solid $button-1-color;
+    padding-top: $padding-middle;
+    padding-bottom: $padding-middle;
+    vertical-align: baseline;
+    display: grid;
+    gap: $padding-middle;
+    &-sticky{
+        position: fixed;
+        top: 0;
+        z-index: 900;
+    }
+    &-bottom{
+        padding-top: 132px;
+        @media (max-width: 650px) {
+            padding-top: 84px;
+        }
+    }
+    &-box{
+        position: relative;
+        z-index: 999;
+        &__container{
+            display: flex;
+            gap: $padding-middle;
+            align-items: center;
+            &-logo{
+                height: 50px;
+                @media (min-width: 650px) {
+                    width: 150px;
+                    img{
+                        display: block;
+                        height: 100%;
+                    }
+                    p{
+                        display: block;
+                    }
+                    svg{
+                        display: none;
+                    }
+
+                }
+                @media (max-width: 650px) {
+                    width: 50px;
+                    img{
+                        display: none;
+                    }
+                    p{
+                        display: none;
+                    }
+                    svg{
+                        display: block;
+                    }
+                }
+            }
+            &-people{
+                overflow: hidden;
+                border-radius: 50%;
+                width: 33px;
+                height: 33px;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

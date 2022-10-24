@@ -1,0 +1,83 @@
+[
+    {
+        "header_id": "header",
+        "header_logo_name": "goblix",
+        "header_logo_img": "logo.png",
+        "header_input_text": "Поиск...",
+    
+
+        "menu_Navigation_main": "Главная",
+        "menu_Navigation_account": "Мой профиль",
+        "menu_Navigation_qestions": "Вопросы",
+        "menu_Navigation_teg": "Теги",
+
+
+        "footer_data_сatalog": "Каталог",
+        "footer_data_blog": "Блог",
+        "footer_data_categories": "Категории",
+        "footer_data_user_manual": "Руководство пользователя",
+
+        "footer_data_agreements": "Категории",
+        "footer_data_privacy_policy": "Политика конфиденциальности",
+        "footer_data_terms_of_use": "Условия пользования",
+        "footer_data_setting_cookies": "Настройка файлов cookie",
+        "footer_data_cookie_policy": "Политика о Cookie",
+
+        "footer_data_about_us": "О нас",
+        "footer_data_contacts": "Контакты",
+        "footer_data_about_the_project": "О проекте",
+        "footer_data_connect_with_us": "Связаться с нами",
+
+
+        "catalog_posts_teg_qestions": "Вопросов:",
+        "catalog_posts_teg_answers": "Ответов:",
+
+
+        "private_policy_page_title": "Политика конфиденциальности",
+
+
+        "user_section_data_qestions": "Вопросов",
+        "user_section_data_answers": "Ответов",
+
+        "user_section_data_button_qestions": "Ваши вопросы",
+        "user_section_data_button_answers": "Ваши ответы",
+        "user_section_data_button_tegs": "Ваши теги",
+        "user_section_data_button_edit_data": "Редактировать профиль",
+
+        "user_section_data_button_menu": "Меню",
+
+
+        "form_edit_profile_data_blok_name": "Общая информация",
+        "form_edit_profile_data_blok_link": "Ссылки",
+        "form_edit_profile_data_file_title": "Твоя любимая аватарочка",
+        "form_edit_profile_data_file_button_text": "Выбери новую аватарочка",
+        "form_edit_profile_data_name_title": "Отображаемое имя",
+        "form_edit_profile_data_description_title": "Обо мне",
+        "form_edit_profile_data_blok_network_title": "Ссылки",
+        "form_edit_profile_data_instagram_title": "Instagram",
+        "form_edit_profile_data_telegram_title": "Telegram",
+        "form_edit_profile_data_linkedln_title": "Linkedln",
+        "form_edit_profile_data_website_title": "Мой сайт",
+        "form_edit_profile_data_github_title": "GitHub",
+        "form_edit_profile_data_youtobe_title": "YouTube",
+
+        "form_edit_profile_data_name": "Никнейм",
+        "form_edit_profile_data_description": "Описание",
+        "form_edit_profile_data_instagram": "Instagram",
+        "form_edit_profile_data_telegram": "Telegram",
+        "form_edit_profile_data_linkedln": "Linkedln",
+        "form_edit_profile_data_website": "Мой сайт",
+        "form_edit_profile_data_github": "GitHub",
+        "form_edit_profile_data_youtobe": "YouTube",
+        "form_edit_profile_data_mail": "Mail",
+        
+        "form_edit_profile_data_button_sumbit": "Сохранить данные",
+        "form_edit_profile_data_button_reset": "Очистить поля ввода",
+
+        
+        "user_teg_statistic_title": "Ваши теги",
+        "user_teg_statistic_name": "Название тега",
+        "user_teg_statistic_qestions": "Вопросов по тегу",
+        "user_teg_statistic_answers": "Ответов по тегу"
+    }
+]

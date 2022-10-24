@@ -1,0 +1,31 @@
+.user-teg__statistic{
+    padding: $padding-middle;
+    display: grid;
+    gap: $padding-middle;
+    &-title{
+        font-weight: 500;
+        color: $text-5-color;
+    }
+    &-container{
+        display: grid;
+        gap: $padding-middle;
+        &__item{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);  
+            gap: $padding-middle;
+            border-radius: 10px;
+            border: 2px solid $accent-1-color;
+            @media (max-width: 650px) {
+                grid-template-columns: 1fr;
+            }
+            &-one{
+                display: flex;
+                gap: $padding-small;
+                align-items: center;
+                flex-wrap: wrap;
+                color: $text-5-color;
+                padding: $padding-middle;
+            }
+        }
+    }
+}

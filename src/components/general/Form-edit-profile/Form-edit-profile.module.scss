@@ -1,0 +1,119 @@
+.form__edit-user{
+    display: grid;
+    gap: $padding-huge;
+    &__blok-title{
+        
+    }
+    &__title{
+        font-weight: 500;
+    }
+    &__container{
+        padding: $padding-middle;
+        display: grid;
+        gap: $padding-huge;
+        margin-bottom: $sections-offset-middle;
+        &-box{
+            display: grid;
+            gap: $padding-middle;
+            &__img{
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            &__file{
+                display: grid;
+                gap: $padding-middle;
+                max-width: 300px;
+            }
+        }
+        &__file{
+            svg{
+                width: 30px;
+                height: 100%;
+                fill: $svg-1-color;
+            }
+            &-text{
+                font-size: .9rem;
+                font-weight: 500;
+                color: $text-4-color;
+            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: $padding-middle;
+            border: 3px solid $button-3-color;
+            padding: $padding-small;
+            border-radius: 10px;
+            &:hover{
+                border-color: $accent-1-color;
+                p{
+                    color: $accent-1-color;
+                    transform: scale(1.05);
+                }
+                svg{
+                    transform: scale(1.1);
+                    fill: $accent-1-color;
+                }
+            }
+        }
+    }
+    &__network{
+        padding: $padding-middle;
+        display: grid;
+        gap: $padding-huge;
+        grid-template-columns: repeat(3, 1fr);
+        @media (max-width: 650px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &-item{
+            display: grid;
+            gap: $padding-small;
+            &__container{
+                border-left: 3px solid $accent-1-color;
+                border-right: 3px solid $accent-1-color;
+                border-radius: 10px;
+                background: $accent-2-color;
+                svg{
+                    background: $accent-2-color;
+                    padding-left: $padding-small;
+                    width: 30px;
+                    height: 100%;
+                    fill: $svg-1-color;
+                }
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+            }
+        }
+        &-input{
+
+        }
+    }
+    &__answer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: $padding-middle;
+        @media (max-width: 650px) {
+            grid-template-columns: 1fr;
+        }
+        &-button{
+            border-radius: 15px;
+            border-left: 5px solid $button-3-color;
+            border-right: 5px solid $button-3-color;
+            border-top: 2px solid $button-3-color;
+            border-bottom: 2px solid $button-3-color;
+            padding: $padding-middle;
+            color: $text-4-color;
+            font-size: 1rem;
+            background: $card-1-color;
+            &:hover{
+                color: $accent-1-color;
+                border-color: $accent-1-color;
+                background: $accent-2-color;
+            }
+        }
+    }
+}
+
+input[type="file"] {
+    display: none;
+}

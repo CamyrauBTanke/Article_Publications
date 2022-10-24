@@ -1,0 +1,63 @@
+input[type=text], input[type=password], input[type=url], input[type=search], input[type=email] {
+    background: $button-4-color;
+    padding: $padding-middle;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-search{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+    @media (max-width: 650px) {
+        height: 50px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 6px;
+    }
+    &__input{
+        @media (max-width: 650px) {
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            left: -200%;
+            &:focus{
+                left: 0;
+            } 
+        }
+    }
+    &__button{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: $padding-middle;
+        height: 30px;
+        fill: $button-3-color;
+        @media (min-width: 650px) {
+            width: 100%;
+            form{
+                width: 100%;
+                overflow: hidden;
+                border-radius: 6px;
+            }
+            svg{
+                display: none;
+            }
+        }
+        &:hover{
+            svg{
+              fill: $accent-1-color;
+            }
+        }
+    }
+}
+
+.form-search__button:focus .form-search__input{
+    @media (max-width: 650px) {
+        transition: left .7s ease-out;
+        left: 0;
+    }
+}

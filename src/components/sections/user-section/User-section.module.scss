@@ -1,0 +1,96 @@
+.user{
+    &-section{
+        margin-top: $sections-offset-small;
+        margin-bottom: $sections-offset-small;
+    }
+    &-container{
+        display: grid;
+    }
+    &-informations{
+        padding: $padding-middle;
+        display: flex;
+        gap: $padding-big;
+        align-items: center;
+        @media (max-width: 650px) {
+            flex-direction: column;
+        }
+        &__img{
+            width: 200px;
+            height: 200px;
+            background: $card-3-color;
+            position: relative;
+            border: 5px solid $accent-1-color;
+            border-radius: 50%;
+            overflow: hidden;
+            &-level{
+                bottom: 20px;
+                left: 50%;
+                transform: translate(-50%, 50%);
+                padding:$padding-small $padding-middle;
+                position: absolute;
+                border: 5px solid $accent-1-color;
+                border-bottom: none;
+                border-top-right-radius: 50%;
+                border-top-left-radius: 50%;
+                background: $card-3-color;
+                &__text{
+                    color: $accent-1-color;
+                    font-weight: 600;
+                    font-size: .9rem;
+                }
+            }
+        }
+        &__info{
+            display: flex;
+            flex-direction: column;
+            gap: $padding-middle;
+            &-nikname{
+                font-size: 2rem;
+                color: $text-5-color;
+            }
+            &-text{
+                font-size: .9rem;
+                font-weight: 500;
+                color: $text-5-color;
+            }
+            &-network{
+                display: flex;
+                gap: $padding-small;
+            }
+            &-statistic{
+                display: flex;
+                gap: $padding-middle;
+                &__text{
+                    font-size: .9rem;
+                    color: $text-1-color;
+                }
+            }
+        }
+    }
+    &-work{
+        padding: $padding-middle;
+        @media (max-width: 650px) {
+            border-top: 3px solid $accent-1-color;
+            border-left: none;
+        }
+        &__navigation{
+            margin-bottom: 30px;
+            &-menu{
+                display: none;
+                @media (max-width: 650px) {
+                    display: flex;
+                }
+            }
+            &-button{
+                display: flex;
+                gap: $padding-middle;
+                @media (max-width: 650px) {
+                    display: none;
+                }
+            }
+        }
+        &__statistic{
+            
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.question{
+    display: grid;
+    gap: $padding-middle;
+
+    &-container{
+        display: flex;
+        gap: $padding-middle;
+        padding: $padding-middle;
+        @media (max-width: 650px) {
+            flex-direction: column-reverse;;
+        }
+        &__description{
+            width: 100%;
+            display: grid;
+            gap: $padding-small;
+            &-title{
+                font-size: 1.6rem;
+            }
+            &-text{
+                color: $text-5-color;
+                font-size: .9rem;
+            } 
+            &-box{
+                display: flex;
+                flex-wrap: wrap;
+                gap: $padding-small;
+                align-items: center;
+            }
+        }
+        &__condition{
+            display: grid;
+            align-items: center;
+            gap: $padding-small;
+            @media (max-width: 650px) {
+                display: flex;
+            }
+        }
+    }
+}
