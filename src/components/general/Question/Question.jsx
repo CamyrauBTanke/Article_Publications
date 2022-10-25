@@ -1,9 +1,9 @@
-import {ReactComponent as Qestions_Like_Up} from '../../general/Svg/svg-like-up.svg';
-import {ReactComponent as Qestions_Answer} from '../../general/Svg/svg-answer-2.svg';
-import {ReactComponent as Qestions_like_Down} from '../../general/Svg/svg-like-down.svg';
+import {ReactComponent as Questions_Like_Up} from '../../general/Svg/svg-like-up.svg';
+import {ReactComponent as Questions_Answer} from '../../general/Svg/svg-answer-2.svg';
+import {ReactComponent as Questions_like_Down} from '../../general/Svg/svg-like-down.svg';
 
-export function Qestions(){
-    const qestionsData = [
+export function Questions(){
+    const questionsData = [
         {
             id: "Qestions_0121212",
             like: 19,
@@ -26,28 +26,28 @@ export function Qestions(){
 
     return(
         <div className="question">
-            {qestionsData.map((qestion) => (
-                <div key={qestion.id} className="question-container box-shadow">
+            {questionsData.map((question) => (
+                <div key={question.id} className="question-container box-shadow">
                     <div className="question-container__condition">
                         <button className="button-img__condition button">
-                            <p className="question-container__condition-button__text button-img__condition-text button-text">{qestion.like}</p>
-                            <Qestions_Like_Up/>
+                            <p className="question-container__condition-button__text button-img__condition-text button-text">{question.like}</p>
+                            <Questions_Like_Up/>
                         </button>
                         <button className="button-img__condition button">
-                            <p className="question-container__condition-button__text button-img__condition-text button-text">{qestion.dizlike}</p>
-                            <Qestions_Answer/>
+                            <p className="question-container__condition-button__text button-img__condition-text button-text">{question.dizlike}</p>
+                            <Questions_Answer/>
                         </button>
                         <button className="button-img__condition button">
-                            <p className="question-container__condition-button__text button-img__condition-text button-text">{qestion.answer}</p>
-                            <Qestions_like_Down/>
+                            <p className="question-container__condition-button__text button-img__condition-text button-text">{question.answer}</p>
+                            <Questions_like_Down/>
                         </button>
                     </div>
                     <div className="question-container__description">
                         <div className="question-container__description">
-                            <h2 key={qestion.id} className="question-container__description-title"><a href="" className="button">{qestion.title}</a></h2>
-                            <p className="question-container__description-text">{qestion.text}</p>
+                            <h2 key={question.id} className="question-container__description-title"><a href="" className="button">{question.title}</a></h2>
+                            <p className="question-container__description-text">{question.text}</p>
                             <div className="question-container__description-box">
-                                {qestion.teg.map((teg, index) => (
+                                {question.teg.map((teg, index) => (
                                     <a key={index} href="" className="button button-fill">{teg}</a>
                                 ))}
                             </div>

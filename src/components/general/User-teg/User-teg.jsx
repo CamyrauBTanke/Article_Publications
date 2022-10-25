@@ -6,20 +6,20 @@ export function User_teg_statistic(props) {
         {
             id_teg: 123214456,
             name_teg: "js",
-            qestions_teg: 32,
+            questions_teg: 32,
             answer_teg: 2
         },
         {
             id_teg: 12112132,
             name_teg: "Vue.js",
-            qestions_teg: 32,
-            answer_teg: 2
+            questions_teg: 2,
+            answer_teg: 1
         },
         {
             id_teg: 123445445,
             name_teg: "jsx",
-            qestions_teg: 32,
-            answer_teg: 2
+            questions_teg: 332,
+            answer_teg: 3
         }
     ]
     return (
@@ -31,7 +31,7 @@ export function User_teg_statistic(props) {
                             <p className="user-teg__statistic-container__item-one">{user_teg_statistic_data.user_teg_statistic_name}: 
                                 <a href="" className="buuton button-fill">{private_policy.name_teg}</a>
                             </p>
-                            <p className="user-teg__statistic-container__item-one">{user_teg_statistic_data.user_teg_statistic_qestions}: {private_policy.qestions_teg}</p>
+                            <p className="user-teg__statistic-container__item-one">{user_teg_statistic_data.user_teg_statistic_questions}: {private_policy.questions_teg}</p>
                             <p className="user-teg__statistic-container__item-one">{user_teg_statistic_data.user_teg_statistic_answers}: {private_policy.answer_teg}</p>
                         </li>
                     ))}

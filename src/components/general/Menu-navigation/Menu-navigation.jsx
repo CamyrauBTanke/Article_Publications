@@ -11,7 +11,7 @@ export function Menu_Navigation(props) {
                     <a key="header_navigation_02" href="" className="button button-menu">{menu_Navigation_data.menu_Navigation_account}</a>
                 </li>
                 <li className="menu-navigation__list-item">
-                    <a key="header_navigation_03" href="" className="button button-menu">{menu_Navigation_data.menu_Navigation_qestions}</a>
+                    <a key="header_navigation_03" href="" className="button button-menu">{menu_Navigation_data.menu_Navigation_questions}</a>
                 </li>
                 <li className="menu-navigation__list-item">
                     <a key="header_navigation_04" href="" className="button button-menu">{menu_Navigation_data.menu_Navigation_teg}</a>

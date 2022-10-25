@@ -8,7 +8,7 @@
 
         "menu_Navigation_main": "Главная",
         "menu_Navigation_account": "Мой профиль",
-        "menu_Navigation_qestions": "Вопросы",
+        "menu_Navigation_questions": "Вопросы",
         "menu_Navigation_teg": "Теги",
 
 
@@ -29,17 +29,17 @@
         "footer_data_connect_with_us": "Связаться с нами",
 
 
-        "catalog_posts_teg_qestions": "Вопросов:",
+        "catalog_posts_teg_questions": "Вопросов:",
         "catalog_posts_teg_answers": "Ответов:",
 
 
         "private_policy_page_title": "Политика конфиденциальности",
 
 
-        "user_section_data_qestions": "Вопросов",
+        "user_section_data_questions": "Вопросов",
         "user_section_data_answers": "Ответов",
 
-        "user_section_data_button_qestions": "Ваши вопросы",
+        "user_section_data_button_questions": "Ваши вопросы",
         "user_section_data_button_answers": "Ваши ответы",
         "user_section_data_button_tegs": "Ваши теги",
         "user_section_data_button_edit_data": "Редактировать профиль",
@@ -77,7 +77,7 @@
         
         "user_teg_statistic_title": "Ваши теги",
         "user_teg_statistic_name": "Название тега",
-        "user_teg_statistic_qestions": "Вопросов по тегу",
+        "user_teg_statistic_questions": "Вопросов по тегу",
         "user_teg_statistic_answers": "Ответов по тегу"
     }
 ]

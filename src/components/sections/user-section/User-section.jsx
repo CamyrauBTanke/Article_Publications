@@ -8,7 +8,7 @@ import {ReactComponent as User_Instagram} from '../../general/Svg/svg-instagram.
 import {ReactComponent as  User_button_menu} from '../../general/Svg/svg-menu.svg';
 
 import {Form_edit_profile} from '../../general/Form-edit-profile/Form-edit-profile';
-import {Qestions} from '../../general/Question/Question';
+import {Questions} from '../../general/Question/Question';
 import {User_teg_statistic} from '../../general/User-teg/User-teg';
 
 export function User_section(props) {
@@ -61,7 +61,7 @@ export function User_section(props) {
                             </a>
                         </div>
                         <div className="user-informations__info-statistic">
-                            <p className="user-informations__info-statistic__text">{user_section_data.user_section_data_qestions}: {user_data[2]}</p>
+                            <p className="user-informations__info-statistic__text">{user_section_data.user_section_data_questions}: {user_data[2]}</p>
                             <p className="user-informations__info-statistic__text">{user_section_data.user_section_data_answers}: {user_data[3]}</p>
                         </div>
                     </div>
@@ -70,7 +70,7 @@ export function User_section(props) {
                     <div className="user-work__navigation">
                         <div className="user-work__navigation-button">
                             <button className="button button-border">
-                                <p className="button-text">{user_section_data.user_section_data_button_qestions}</p>
+                                <p className="button-text">{user_section_data.user_section_data_button_questions}</p>
                             </button>
                             <button className="button button-border">
                                 <p className="button-text">{user_section_data.user_section_data_button_answers}</p>
@@ -90,7 +90,7 @@ export function User_section(props) {
                     <div className="user-work__statistick">
                         <User_teg_statistic user_teg_statistic_data = {user_section_data}/>
                         <Form_edit_profile form_edit_profile_data = {user_section_data}/>
-                        <Qestions/>
+                        <Questions/>
                     </div>
                 </div>
             </div>
