@@ -2,5 +2,21 @@
     &__title{
         font-size: 2rem;
         color: $text-5-color;
+        margin-bottom: $padding-huge;
+    }
+    &__container{
+        display: grid;
+        grid-template-columns: 1.5fr .5fr;
+        width: 100%;
+        gap: $padding-middle;
+        justify-content: space-between;
+        @media (max-width: 650px) {
+            grid-template-columns: 1fr;
+        }
+        &-box{
+            display: grid;
+            gap: $padding-small;
+            grid-template-columns: 1fr 1fr;
+        }
     }
 }

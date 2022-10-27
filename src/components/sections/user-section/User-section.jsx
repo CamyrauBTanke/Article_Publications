@@ -10,9 +10,18 @@ import {ReactComponent as  User_button_menu} from '../../general/Svg/svg-menu.sv
 import {Form_edit_profile} from '../../general/Form-edit-profile/Form-edit-profile';
 import {Questions} from '../../general/Question/Question';
 import {User_teg_statistic} from '../../general/User-teg/User-teg';
+import {handleClick} from '../../../index';
+
+import {useState} from 'react';
 
 export function User_section(props) {
     const {user_section_data} = props;
+    const [isShown_1, setIsShown_1] = useState(false),
+          [isShown_2, setIsShown_2] = useState(false),
+          [isShown_3, setIsShown_3] = useState(false),
+          [isShown_4, setIsShown_4] = useState(false),
+          [isShown, setIsShown] = useState(false);
+
     const user_data = [
         "Xoxot",
         "shfbsidfbidbfodnsfimsd ifim dsfn dsufn ds fsdu",
@@ -26,7 +35,7 @@ export function User_section(props) {
         "https://www.youtube.com/channel/UCCIaTyFJqvO1SanxoltkOAA",
         2
     ]
-    
+
     return (
         <section className="user-section page-section section">
             <div className="user-container container">
@@ -69,28 +78,50 @@ export function User_section(props) {
                 <div className="user-work">
                     <div className="user-work__navigation">
                         <div className="user-work__navigation-button">
-                            <button className="button button-border">
+                            <button onClick={handleClick(setIsShown_1)} className="button button-border">
                                 <p className="button-text">{user_section_data.user_section_data_button_questions}</p>
                             </button>
-                            <button className="button button-border">
+                            <button onClick={handleClick(setIsShown_4)} className="button button-border">
                                 <p className="button-text">{user_section_data.user_section_data_button_answers}</p>
                             </button>
-                            <button className="button button-border">
+                            <button onClick={handleClick(setIsShown_2)} className="button button-border">
                                 <p className="button-text">{user_section_data.user_section_data_button_tegs}</p>
                             </button>
-                            <button className="button button-border">
+                            <button onClick={handleClick(setIsShown_3)} className="button button-border">
                                 <p className="button-text">{user_section_data.user_section_data_button_edit_data}</p>
                             </button>
                         </div>
-                        <button className="button-img__condition button user-work__navigation-menu">
+                        <button onClick={handleClick(setIsShown)} className="button-img__condition button user-work__navigation-menu">
                             <User_button_menu/>
                             <p className="question-container__condition-button__text button-img__condition-text button-text">{user_section_data.user_section_data_button_menu}</p>
                         </button>
+                        {<> { isShown && (
+                            <div className="user-work__navigation-box box-shadow">
+                                <button onClick={handleClick(setIsShown_1)} className="button button-menu">
+                                    <p className="button-text">{user_section_data.user_section_data_button_questions}</p>
+                                </button>
+                                <button onClick={handleClick(setIsShown_4)} className="button button-menu">
+                                    <p className="button-text">{user_section_data.user_section_data_button_answers}</p>
+                                </button>
+                                <button onClick={handleClick(setIsShown_2)} className="button button-menu">
+                                    <p className="button-text">{user_section_data.user_section_data_button_tegs}</p>
+                                </button>
+                                <button onClick={handleClick(setIsShown_3)} className="button button-menu">
+                                    <p className="button-text">{user_section_data.user_section_data_button_edit_data}</p>
+                                </button>
+                            </div>
+                        ) } </>}
                     </div>
                     <div className="user-work__statistick">
-                        <User_teg_statistic user_teg_statistic_data = {user_section_data}/>
-                        <Form_edit_profile form_edit_profile_data = {user_section_data}/>
-                        <Questions/>
+                        {<> { isShown_2 && (
+                            <User_teg_statistic user_teg_statistic_data = {user_section_data}/>
+                        ) } </>}
+                        {<> { isShown_3 && (
+                            <Form_edit_profile form_edit_profile_data = {user_section_data}/>
+                        ) } </>}
+                        {<> { isShown_1 && (
+                            <Questions/>
+                        ) } </>}
                     </div>
                 </div>
             </div>

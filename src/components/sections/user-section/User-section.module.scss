@@ -77,6 +77,11 @@
                     display: flex;
                 }
             }
+            &-box{
+                margin-top: $padding-middle;
+                padding: $padding-middle;
+                background-color: $card-1-color;
+            }
             &-button{
                 display: flex;
                 gap: $padding-middle;
