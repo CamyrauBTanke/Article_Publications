@@ -1,13 +1,22 @@
 .header{
     position: relative;
     z-index: 900;
-    background-color: $card-3-color;
+    background: $card-3-color;
     border-bottom: 4px solid $button-1-color;
-    padding-top: $padding-middle;
-    padding-bottom: $padding-middle;
     vertical-align: baseline;
     display: grid;
-    gap: $padding-middle;
+    padding-bottom: $padding-middle;
+
+    @media (max-width: 650px) {
+        border-bottom: none;
+        background: none;
+    }
+    &-line{
+        border-bottom: 4px solid $button-1-color;
+        @media (min-width: 650px) {
+            border-bottom: none;
+        }
+    }
     &-sticky{
         position: fixed;
         top: 0;
@@ -20,6 +29,9 @@
         }
     }
     &-box{
+        padding-top: $padding-middle;
+        padding-bottom: $padding-middle;
+        background-color: $card-3-color;
         position: relative;
         z-index: 999;
         &__container{

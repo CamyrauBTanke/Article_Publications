@@ -5,17 +5,26 @@ import {ReactComponent as Header_notifications} from '../../general/Svg/svg-noti
 import {Menu_Navigation} from '../../general/Menu-navigation/Menu-navigation';
 
 import Header_User from '../../../assets/images/photo_2022-05-03_17-15-52.jpg';
+import {handleClick} from '../../../index';
+
+import {useState} from 'react';
+
+function navNone(header_section_data){
+    if(window.innerWidth > 650) return(<Menu_Navigation menu_Navigation_data = {header_section_data}/>);
+    else return;
+}
 
 export function Header(props) {
     const {header_section_data} = props;
+    const [isShown, setIsShown] = useState(false);
     const header_data_user = [11, Header_User];
     
     return (
         <>
         <header className="header header-sticky section">
-            <nav className="header-box container">
+            <nav className="header-box container header-line">
                 <div className="header-box__container">
-                    <button className="header-box__container-logo svg-box button button-img menu-navigation__button" id="menu-navigation__button">
+                    <button onClick={handleClick(setIsShown)} className="header-box__container-logo svg-box button button-img menu-navigation__button" id="menu-navigation__button">
                         <Header_menu />
                         <img src={Header_logo} alt="" className="" />
                     </button>
@@ -38,7 +47,10 @@ export function Header(props) {
                     </div>
                 </div>
             </nav>
-            <Menu_Navigation menu_Navigation_data = {header_section_data}/>
+            {navNone(header_section_data)}
+            {<> { isShown && (
+                <Menu_Navigation menu_Navigation_data = {header_section_data}/>
+            ) } </>}
         </header>
         <div className="header-bottom"></div>
         </>

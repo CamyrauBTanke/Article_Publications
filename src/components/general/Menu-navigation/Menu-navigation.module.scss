@@ -1,14 +1,7 @@
 .menu-navigation{
-    z-index: 800;
     @media (max-width: 650px) {
-        position: absolute;
-        width: 60%;
-        right: 20%;
-        left: 20%;
-        top: -252px;
-        &:focus{
-            top: 84px;
-        }
+        width: 200px;
+        margin: auto;
     }
     @media (min-width: 650px) {
         width: 100%;
@@ -19,19 +12,11 @@
     }
     &__container{
         @media (max-width: 650px) {
-            padding: $padding-middle 0px;
+            padding: $padding-small;
             background: $card-3-color;
             border: 4px solid $button-1-color;
             border-top: none;
-            border-radius: 0 0 60px 65px;
-        }
-    }
-    &__button{
-        &:focus .menu-navigation{
-            @media (max-width: 650px) {
-                transition: top .7s ease-out;
-                top: 84px;
-            }
+            border-radius: 0 0 45px 45px;
         }
     }
     &__list{
