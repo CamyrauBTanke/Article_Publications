@@ -12,8 +12,10 @@
             list-style: none;
             counter-reset: li;
             &__title{
+                font-weight: 700;
+                font-size: 1.3rem;
                 text-align: justify;
-                color: $text-2-color;
+                color: $text-5-color;
                 padding-bottom: $padding-middle;
                 &:before {
                     counter-increment: li;
@@ -22,6 +24,8 @@
             }
         }
         &-2{
+            font-weight: 400;
+            font-size: 1.1rem;
             padding-top: $padding-middle;
             list-style: none;
             counter-reset: li;

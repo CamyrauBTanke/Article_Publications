@@ -28,7 +28,7 @@ export function User_section(props) {
     ]
     
     return (
-        <section className="user-section section">
+        <section className="user-section page-section section">
             <div className="user-container container">
                 <div className="user-informations">
                     <div className="user-informations__img">

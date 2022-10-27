@@ -1,5 +1,10 @@
 [
     {
+        "error_title": "Ой. Что-то пошло не так",
+        "error_text": "Ошибочка",
+        "error_button": "Домашняя страница",
+
+
         "header_id": "header",
         "header_logo_name": "goblix",
         "header_logo_img": "logo.png",
@@ -12,16 +17,14 @@
         "menu_Navigation_teg": "Теги",
 
 
-        "footer_data_сatalog": "Каталог",
-        "footer_data_blog": "Блог",
-        "footer_data_categories": "Категории",
-        "footer_data_user_manual": "Руководство пользователя",
-
-        "footer_data_agreements": "Категории",
+        "footer_data_сatalog": "Информация",
         "footer_data_privacy_policy": "Политика конфиденциальности",
         "footer_data_terms_of_use": "Условия пользования",
-        "footer_data_setting_cookies": "Настройка файлов cookie",
-        "footer_data_cookie_policy": "Политика о Cookie",
+
+        "footer_data_agreements": "Навигация",
+        "footer_data_categories": "Теги",
+        "footer_data_question": "Вопросы",
+        "footer_data_user": "Мой профиль",
 
         "footer_data_about_us": "О нас",
         "footer_data_contacts": "Контакты",
@@ -31,6 +34,10 @@
 
         "catalog_posts_teg_questions": "Вопросов:",
         "catalog_posts_teg_answers": "Ответов:",
+        "catalog_posts_page_title": "Все теги",
+        "catalog_posts_page_sort_by_name": "Имя",
+        "catalog_posts_page_sort_by_date_new": "Новые",
+        "page_posts_page_input": "Поиск совпадений...",
 
 
         "private_policy_page_title": "Политика конфиденциальности",
@@ -45,6 +52,10 @@
         "user_section_data_button_edit_data": "Редактировать профиль",
 
         "user_section_data_button_menu": "Меню",
+
+
+        "codex_section_title": "Кодекс (она же клятва) авторов Goblix",
+        "codex_section_text": "Это не документ, которого нужно строго придерживаться. Это вообще не документ. Это правила, которые в идеале должны соблюдать все авторы на ресурсе. Админы у нас добрые так что за плохое поведение просто выдадим мут.",
 
 
         "form_edit_profile_data_blok_name": "Общая информация",

@@ -49,9 +49,20 @@
                     padding-top: $padding-huge;
                     display: grid;
                     gap: $padding-small;
+
+                    &-active{
+                        gap: $padding-small;
+                        @media (min-width: 650px) {
+                            display: none;
+                        }
+                        @media (max-width: 650px) {
+                            display: grid;
+                            padding-top: $padding-middle;
+                            padding-left: $padding-middle;
+                        }
+                    }
                     @media (max-width: 650px) {
                         display: none;
-                        gap: $padding-small;
                     }
                 }
             }

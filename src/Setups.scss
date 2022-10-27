@@ -10,10 +10,17 @@
 @import "./components/general/Text/Text.module.scss";
 @import "./components/general/Form-edit-profile/Form-edit-profile.module.scss";
 @import "./components/general/User-teg/User-teg.modules.scss";
+@import "./components/general/navigation-container/Navigation-container.module.scss";
 
 @import "./components/sections/footer/Footer.module.scss";
 @import "./components/sections/header/Header.module.scss";
 @import "./components/sections/user-section/User-section.module.scss";
 @import "./components/sections/catalog-section/Catalog-section.module.scss";
 @import "./components/sections/privacy-policy-section/Privacy-policy-section.module.scss";
-@import "./components/sections/question-section/Question-section.scss"
+@import "./components/sections/question-section/Question-section.scss";
+@import "./components/sections/error-section/Error-section.module.scss";
+@import "./components/sections/codex-section/Codex-section.modules.scss";
+
+@import "./components/pages/page-catalog/Page-catalog.module.scss";
+@import "./components/pages/page-home/Page-home.module.scss";
+@import "./components/pages/page-question/Page-question.module.scss";

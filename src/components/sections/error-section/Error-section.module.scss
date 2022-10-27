@@ -1,0 +1,34 @@
+.error{
+    &-section{
+        margin-top: $sections-offset;
+        margin-bottom: $sections-offset;
+        display: grid;
+        gap: $padding-huge;
+    }
+    &-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 750px;
+        gap: $padding-huge;
+        &-row{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &-img{
+        height: 200px;
+        @media (max-width: 650px) {
+            display: none;
+        }
+    }
+    &-title{
+        color: $text-5-color;
+        font-size: 1.6rem;
+    }
+    &-text{
+        color: $text-4-color;
+        font-size: 1.2rem;
+    }
+}
