@@ -47,12 +47,10 @@ export function Catalog_posts(props) {
                 <h4 className="catalog-item__description">{teg.text}</h4>
                 <div className="catalog-item__container">
                     <div className="catalog-item__container-2">
-                        <span className="catalog-item__container-text">{catalog_posts_section_data.catalog_posts_teg_questions}</span>
-                        <span className="catalog-item__container-text">{teg.question}</span>
+                        <span className="catalog-item__container-text">{catalog_posts_section_data.catalog_posts_teg_questions+" "+teg.question}</span>
                     </div>
                     <div className="catalog-item__container-2">
-                        <span className="catalog-item__container-text">{catalog_posts_section_data.catalog_posts_teg_answers}</span>
-                        <span className="catalog-item__container-text">{teg.answer}</span>
+                        <span className="catalog-item__container-text">{catalog_posts_section_data.catalog_posts_teg_answers+" "+teg.answer}</span>
                     </div>
                 </div>
             </div>

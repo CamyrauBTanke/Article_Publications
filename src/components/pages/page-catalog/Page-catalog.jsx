@@ -23,7 +23,7 @@ export function Page_catalog(props) {
                     </button>
                 </form>
             </div>
-            <Catalog_posts catalog_posts_section_data={props}/>
+            <Catalog_posts catalog_posts_section_data={page_catalog_data}/>
             <Navigation_container />
         </div>
     );
