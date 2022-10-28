@@ -90,6 +90,12 @@
         "user_teg_statistic_title": "Ваши теги",
         "user_teg_statistic_name": "Название тега",
         "user_teg_statistic_questions": "Вопросов по тегу",
-        "user_teg_statistic_answers": "Ответов по тегу"
+        "user_teg_statistic_answers": "Ответов по тегу",
+
+
+        "page_question_title": "Все вопросы",
+        "page_question_create_question": "Задать вопрос",
+        "page_question_sort_by_data": "недавние",
+        "page_question_sort_by_popular": "Популярные"
     }
 ]

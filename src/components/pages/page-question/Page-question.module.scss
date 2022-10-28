@@ -1,0 +1,23 @@
+.page-question{
+    &__section{
+        display: grid;
+        gap: $padding-huge;
+    }
+    &__title{
+        font-size: 2rem;
+        color: #323232;
+    }
+    &__container{
+        display: flex;
+        align-items: center;
+        gap: $padding-middle;
+        justify-content: space-between;
+        &-flex{
+            justify-content: start;
+            @media (max-width: 650px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
