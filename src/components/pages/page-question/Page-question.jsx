@@ -7,7 +7,7 @@ export function Page_question(props) {
         <div className="page-section section page-question__section">
             <div className="container page-question__container">
                 <h2 className="page-question__title">{page_qustion_data.page_question_title}</h2>
-                <a href="" className="button button-border">{page_qustion_data.page_question_create_question}</a>
+                <a href="/create_question" className="button button-border">{page_qustion_data.page_question_create_question}</a>
             </div>
             <form className="container page-question__container page-question__container-flex">
                 <button name="page_question_sort_by_data" className="button button-fill">{page_qustion_data.page_question_sort_by_data}</button>
