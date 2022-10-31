@@ -1,3 +1,5 @@
+import logo from "../../../assets/images/logo1.png";
+
 export function Private_policy_section(props) {
     const {private_policy_section_data} = props;
     const private_policy_section_data_js = [
@@ -175,7 +177,15 @@ export function Private_policy_section(props) {
     return (
         <section className="privacy-policy-section section">
             <div className="privacy-policy-container container">
-                <h1 className="privacy-policy__title">{private_policy_section_data.private_policy_page_title}</h1>
+                <div className="codex-box">
+                    <div className="codex-container">
+                        <h1 className="privacy-policy__title">{private_policy_section_data.private_policy_page_title}</h1>
+                        <p className="codex-box__text">{private_policy_section_data.private_policy_page_text}</p>
+                    </div>
+                    <div className="codex-box__img">
+                        <img src={logo} alt="" className="full-img" />
+                    </div>
+                </div>
                 <ol className="privacy-policy__list-1">
                     {private_policy_section_data_js.map((private_policy) => (
                         <li key={private_policy.id_h1} className="privacy-policy__list-1__title">{private_policy.private_policy_h1}

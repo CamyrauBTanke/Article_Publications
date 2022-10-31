@@ -1,0 +1,41 @@
+.page-login{
+    &__container{
+        max-width: 500px;
+        margin: auto;
+        padding: $padding-middle;
+        display: grid;
+        gap: $padding-huge;
+    }
+    &__section{
+        display: grid;
+        gap: $padding-huge;
+        margin-top: $sections-offset-middle;
+        margin-bottom: $sections-offset-middle;
+    }
+    &__text{
+        color: $text-5-color;
+        font-size: 1rem;
+    }
+    &__link{
+        color: $accent-1-color;
+        &:hover{
+            font-weight: 700;
+        }
+    }
+    &__box{
+        display: grid;
+        gap: $padding-tiny;
+        &-also{
+            text-align: center;
+        }
+        &-text{
+            color: $text-5-color;
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+    &__title{
+        color: $text-5-color;
+        font-size: 2rem;
+    }
+}

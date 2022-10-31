@@ -5,7 +5,11 @@
     }
     &__title{
         color: $text-5-color;
-        padding-bottom: $padding-huge;
+        font-size: 2rem;
+    }
+    &-container{
+        display: grid;
+        gap: $padding-huge;
     }
     &__list{
         &-1{

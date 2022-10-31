@@ -18,7 +18,7 @@
 
 
         "footer_data_сatalog": "Информация",
-        "footer_data_privacy_policy": "Политика конфиденциальности",
+        "footer_data_privacy_policy": "Пользовательское соглашение",
         "footer_data_terms_of_use": "Условия пользования",
 
         "footer_data_agreements": "Навигация",
@@ -40,7 +40,8 @@
         "page_posts_page_input": "Поиск совпадений...",
 
 
-        "private_policy_page_title": "Политика конфиденциальности",
+        "private_policy_page_title": "Пользовательское соглашение",
+        "private_policy_page_text": "Настоящий документ «Пользовательское соглашение» представляет собой предложение компании «Goblix» заключить договор на изложенных ниже условиях.",
 
 
         "user_section_data_questions": "Вопросов",
@@ -113,6 +114,171 @@
 
         "page_edit_question_title": "Изменить вопрос",
         "page_edit_question_button_sumbit": "Сохранить",
-        "page_edit_question_button_reset": "Отмена"
+        "page_edit_question_button_reset": "Отмена",
+
+
+        "page_login_title": "Вход в аккаунт",
+        "page_login_name_title": "Никнейм",
+        "page_login_password_title": "Пароль",
+        "page_login_name_input": "Введите никнейм...",
+        "page_login_password_input": "Ввердите пароль...",
+        "page_login_button_login": "Войти",
+        "page_login_text": "Всё ещё нет аккаунта? ",
+        "page_login_link": "Зарегестрируйтесь",
+
+
+        "page_registration_title": "Регистрация аккауна",
+        "page_registration_box_text": "Создавая аккаунт вы принимаете ",
+        "page_registration_box_link": "Пользовательское соглашение",
+        "page_registration_name_title": "Никнейм",
+        "page_registration_email_title": "Почта",
+        "page_registration_password_title": "Пароль",
+        "page_registration_name_input": "Введите никнейм...",
+        "page_registration_email_input": "Введите почту...",
+        "page_registration_password_input": "Ввердите пароль...",
+        "page_registration_button_registration": "Зарегестрироваться",
+        "page_registration_text": "Уже есть аккаунт? ",
+        "page_registration_link": "Войдите"
+    },
+    {
+        "error_title": "Oops. Something went wrong",
+        "error_text": "Error",
+        "error_button": "Home",
+
+
+        "header_id": "header",
+        "header_logo_name": "goblix",
+        "header_logo_img": "logo.png",
+        "header_input_text": "Searching...",
+    
+
+        "menu_Navigation_main": "Main",
+        "menu_Navigation_account": "My Profile",
+        "menu_Navigation_questions": "Questions",
+        "menu_Navigation_teg": "Tags",
+
+
+        "footer_data_сatalog": "Information",
+        "footer_data_privacy_policy": "User Agreement",
+        "footer_data_terms_of_use": "Terms of Use",
+
+        "footer_data_agreements": "Navigation",
+        "footer_data_categories": "Tags",
+        "footer_data_question": "Questions",
+        "footer_data_user": "My profile",
+
+        "footer_data_about_us": "About us",
+        "footer_data_contacts": "Contacts",
+        "footer_data_about_the_project": "About the project",
+        "footer_data_connect_with_us": "Contact Us",
+
+
+        "catalog_posts_teg_questions": "Questions:",
+        "catalog_posts_teg_answers": "Answers:",
+        "catalog_posts_page_title": "All Tags",
+        "catalog_posts_page_sort_by_name": "Name",
+        "catalog_posts_page_sort_by_date_new" : "New",
+        "page_posts_page_input": "Search for matches...",
+
+
+        "private_policy_page_title": "User Agreement",
+        "private_policy_page_text": "This User Agreement document constitutes an offer by Goblix to enter into an agreement on the terms and conditions set out below.",
+
+
+        "user_section_data_questions": "Questions",
+        "user_section_data_answers": "Answers",
+
+        "user_section_data_button_questions": "Your questions",
+        "user_section_data_button_answers": "Your answers",
+        "user_section_data_button_tegs": "Your Tags",
+        "user_section_data_button_edit_data": "Edit Profile",
+        "user_section_data_button_sms": "Notifications",
+
+        "user_section_data_button_menu": "Menu",
+
+
+        "codex_section_title": "Codex (aka oath) of the authors of Goblix",
+        "codex_section_text": "This is not a document that needs to be strictly adhered to. It's not a document at all. These are rules that all authors on the resource should ideally follow. Our admins are kind, so we'll just issue a mute for bad behavior.",
+
+
+        "form_edit_profile_data_blok_name": "General Info",
+        "form_edit_profile_data_blok_link": "Links",
+        "form_edit_profile_data_file_title": "Your Favorite Avatar",
+        "form_edit_profile_data_file_button_text" : "Choose a new avatar",
+        "form_edit_profile_data_name_title": "Display Name",
+        "form_edit_profile_data_description_title": "About me",
+        "form_edit_profile_data_blok_network_title" : "Links",
+        "form_edit_profile_data_instagram_title": "Instagram",
+        "form_edit_profile_data_telegram_title": "Telegram",
+        "form_edit_profile_data_linkedln_title": "Linkedln",
+        "form_edit_profile_data_website_title": "My Website",
+        "form_edit_profile_data_github_title": "GitHub",
+        "form_edit_profile_data_youtobe_title": "YouTube",
+
+        "form_edit_profile_data_name": "Nickname",
+        "form_edit_profile_data_description" : "Description",
+        "form_edit_profile_data_instagram": "Instagram",
+        "form_edit_profile_data_telegram": "Telegram",
+        "form_edit_profile_data_linkedIn": "LinkedIn",
+        "form_edit_profile_data_website": "My Website",
+        "form_edit_profile_data_github": "GitHub",
+        "form_edit_profile_data_youtobe": "YouTube",
+        "form_edit_profile_data_mail": "Mail",
+        
+        "form_edit_profile_data_button_sumbit" : "Save Data",
+        "form_edit_profile_data_button_reset" : "Clear input fields",
+
+        
+        "user_teg_statistic_title": "Your Tags",
+        "user_teg_statistic_name": "Tag Name",
+        "user_teg_statistic_questions": "Questions by Tag",
+        "user_teg_statistic_answers": "Tag Responses",
+
+
+        "page_question_title": "All Questions",
+        "page_question_create_question": "Ask a Question",
+        "page_question_sort_by_data": "recent",
+        "page_question_sort_by_popular" : "Popular",
+
+        "page_create_question_button_reset" : "Cancel",
+        "page_create_question_button_sumbit": "Ask a Question",
+        "page_create_question_title": "Ask a Question",
+        "page_create_question_ruls": "Communication Rules",
+        "page_create_question_text": "When asking questions, we kindly ask you to comply",
+        "page_create_question_link": "Code of Communication",
+        "page_create_question_name": "Title",
+        "page_create_question_description": "Main",
+        "page_create_question_tegs": "Tags",
+        "page_create_question_description_input_name": "Issue Brief...",
+        "page_create_question_description_input_description": "Enter a more detailed description of your problem...",
+        "page_create_question_description_input_tegs": "Enter tags...",
+
+        "page_edit_question_title": "Edit Question",
+        "page_edit_question_button_sumbit" : "Save",
+        "page_edit_question_button_reset" : "Cancel",
+
+
+        "page_login_title": "Login",
+        "page_login_name_title": "Nickname",
+        "page_login_password_title": "Password",
+        "page_login_name_input": "Enter your nickname...",
+        "page_login_password_input": "Enter Password...",
+        "page_login_button_login": "Login",
+        "page_login_text": "Still no account? ",
+        "page_login_link": "Sign up",
+
+
+        "page_registration_title": "Account Registration",
+        "page_registration_box_text": "By creating an account you accept ",
+        "page_registration_box_link": "User Agreement",
+        "page_registration_name_title": "Nickname",
+        "page_registration_email_title": "Mail",
+        "page_registration_password_title": "Password",
+        "page_registration_name_input": "Enter a nickname...",
+        "page_registration_email_input": "Enter email...",
+        "page_registration_password_input": "Enter your password...",
+        "page_registration_button_registration": "Register",
+        "page_registration_text": "Already have an account? ",
+        "page_registration_link": "Login"
     }
 ]

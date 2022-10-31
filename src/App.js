@@ -9,6 +9,7 @@ import {Page_question} from './components/pages/page-question/Page-question';
 import {Create_question} from './components/pages/page-create-question/Page-create-question';
 import {Edit_question} from './components/pages/page-edit-question/Page-edit-question';
 import {Page_login} from './components/pages/page-login/Page-login';
+import {Page_registration} from './components/pages/page-registration/Page-registration';
 
 import './Setups.scss';
 import Records from './Setting.data.json';
@@ -34,6 +35,7 @@ export function App() {
         <Route path="/create_question" element={<Create_question create_question_page_data = {data_json}/>} />
         <Route path="/edit_question/:id" element={<Edit_question create_question_page_data = {data_json}/>} />
         <Route path="/login" element={<Page_login page_login_data = {data_json}/>} />
+        <Route path="/registration" element={<Page_registration page_registration_data = {data_json}/>} />
       </Routes>
     </BrowserRouter>
     <Footer footer_section_data = {data_json} />

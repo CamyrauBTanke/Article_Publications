@@ -19,15 +19,16 @@
             flex-direction: column;
             justify-content: center;
         }
+        &__title{
+            color: $text-5-color;
+            font-size: 2rem;
+        }
         &__img{
             width: 150px;
             height: 50px;
             border-radius: 6px;
             background-color: $text-5-color;
             padding: $padding-small;
-        }
-        &__title{
-            font-size: 1.6rem;
         }
         &__text{
             font-size: 1.2rem;
