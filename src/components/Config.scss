@@ -4,8 +4,6 @@
     font-family: $user-font;
     margin: 0;
     padding: 0;
-	transition: .3s ease-out;
-	
 }
 
 html {
@@ -17,8 +15,27 @@ html {
     }
 }
 
+::selection{
+	background-color: $accent-1-color;
+	color: $accent-2-color;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: $card-3-color;
+}
+
+::-webkit-scrollbar-thumb {
+	background: $button-1-color;
+	border-radius: 10px;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
+	line-height: normal;
 }
 
 p, span {
@@ -79,6 +96,10 @@ ul {
 	width: 100%;
     height: 100%;
 	object-fit: cover;
+}
+
+svg{
+	transition: .3s ease-out;
 }
 
 .svg-box{

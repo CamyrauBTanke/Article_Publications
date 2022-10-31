@@ -96,6 +96,23 @@
         "page_question_title": "Все вопросы",
         "page_question_create_question": "Задать вопрос",
         "page_question_sort_by_data": "недавние",
-        "page_question_sort_by_popular": "Популярные"
+        "page_question_sort_by_popular": "Популярные",
+
+        "page_create_question_button_reset": "Отмена",
+        "page_create_question_button_sumbit": "Задать вопрос",
+        "page_create_question_title": "Задать вопрос",
+        "page_create_question_ruls": "Правила общения",
+        "page_create_question_text": "Задавая вопры убедительно просим соблюдать",
+        "page_create_question_link": "Кодекс общения",
+        "page_create_question_name": "Заголовок",
+        "page_create_question_description": "Основная часть",
+        "page_create_question_tegs": "Теги",
+        "page_create_question_description_input_name": "Краткое описание проблемы...",
+        "page_create_question_description_input_description": "Введите более детальное описание вашей проблемы...",
+        "page_create_question_description_input_tegs": "Введите теги...",
+
+        "page_edit_question_title": "Изменить вопрос",
+        "page_edit_question_button_sumbit": "Сохранить",
+        "page_edit_question_button_reset": "Отмена"
     }
 ]

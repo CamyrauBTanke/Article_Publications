@@ -11,7 +11,7 @@ export function Error_section(props) {
                     <a href="/" className="button button-border">{error_section_data.error_button}</a>
                 </div>
                 <div className="error-img">
-                    <img src={Logo} alt="" className="full-img" />
+                    <img src={Logo} alt="" className="full-img button-animate" />
                 </div>
             </div>
         </section>

@@ -6,8 +6,9 @@ import {Error_section} from './components/sections/error-section/Error-section';
 import {Codex_section} from './components/sections/codex-section/Codex-section';
 import {Page_catalog} from './components/pages/page-catalog/Page-catalog';
 import {Page_question} from './components/pages/page-question/Page-question';
-import {Create_question} from './components/pages/page-create-question/page-create-question';
-
+import {Create_question} from './components/pages/page-create-question/Page-create-question';
+import {Edit_question} from './components/pages/page-edit-question/Page-edit-question';
+import {Page_login} from './components/pages/page-login/Page-login';
 
 import './Setups.scss';
 import Records from './Setting.data.json';
@@ -31,6 +32,8 @@ export function App() {
         <Route path="/" element={<Page_question page_qustion_data={data_json}/>} />
         <Route path="*" element={<Error_section error_section_data = {data_json}/>} />
         <Route path="/create_question" element={<Create_question create_question_page_data = {data_json}/>} />
+        <Route path="/edit_question/:id" element={<Edit_question create_question_page_data = {data_json}/>} />
+        <Route path="/login" element={<Page_login page_login_data = {data_json}/>} />
       </Routes>
     </BrowserRouter>
     <Footer footer_section_data = {data_json} />

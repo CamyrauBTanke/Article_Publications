@@ -1,9 +1,9 @@
-export function Create_question(props){
+export function Edit_question(props){
     const {create_question_page_data} = props;
     return(
         <section className="section create-question__section">
             <div className="container create-question__container">
-                <h2 className="create-question__title">{create_question_page_data.page_create_question_title}</h2>
+                <h2 className="create-question__title">{create_question_page_data.page_edit_question_title}</h2>
                 <form action="conteiner" className="create-question__box box-shadow">
                     <div className="create-question__box-container">
                         <h4 className="form-title">{create_question_page_data.page_create_question_ruls}</h4>
@@ -23,7 +23,7 @@ export function Create_question(props){
                     </div>
                     <div className="form__edit-user__answer create-question__box-container">
                         <button type="submit" className="button button-border">
-                            <p className="button-text">{create_question_page_data.page_create_question_button_sumbit}</p>
+                            <p className="button-text">{create_question_page_data.page_edit_question_button_sumbit}</p>
                         </button>
                         <a href="/question" className="button button-border">
                             <p className="button-text">{create_question_page_data.page_edit_question_button_reset}</p>

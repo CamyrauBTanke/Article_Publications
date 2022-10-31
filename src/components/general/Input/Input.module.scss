@@ -7,13 +7,19 @@ input[type=text], input[type=password], input[type=url], input[type=search], inp
     box-sizing: border-box;
 }
 
+textarea{
+    border: none;
+    font-size: 1rem;
+    padding: $padding-middle;
+    background: $button-4-color;
+}
+
 .form-search{
     display: flex;
     align-items: center;
     width: 100%;
-    
+    height: 50px;
     @media (max-width: 650px) {
-        height: 50px;
         position: relative;
         overflow: hidden;
         border-radius: 6px;
@@ -26,16 +32,21 @@ input[type=text], input[type=password], input[type=url], input[type=search], inp
             left: -200%;
             &:focus{
                 left: 0;
-            } 
+            }
         }
     }
     &__button{
         display: flex;
         align-items: center;
-        justify-content: start;
         gap: $padding-middle;
         height: 30px;
+        width: 100%;
         fill: $button-3-color;
+        @media (max-width: 650px) {
+            display: grid;
+            gap: 0px;
+            justify-content: start;
+        }
         @media (min-width: 650px) {
             width: 100%;
             form{

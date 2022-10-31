@@ -1,10 +1,9 @@
 import Header_logo from '../../../assets/images/logo1.png';
 import {ReactComponent as Header_menu} from '../../general/Svg/svg-menu.svg';
 import {ReactComponent as Header_search} from '../../general/Svg/svg-search.svg';
+import {ReactComponent as Header_User} from '../../general/Svg/svg-account.svg';
 import {ReactComponent as Header_notifications} from '../../general/Svg/svg-notifications.svg';
 import {Menu_Navigation} from '../../general/Menu-navigation/Menu-navigation';
-
-import Header_User from '../../../assets/images/photo_2022-05-03_17-15-52.jpg';
 import {handleClick} from '../../../index';
 
 import {useState} from 'react';
@@ -17,16 +16,18 @@ function navNone(header_section_data){
 export function Header(props) {
     const {header_section_data} = props;
     const [isShown, setIsShown] = useState(false);
-    const header_data_user = [11, Header_User];
+    const header_data_user = 11;
     
     return (
         <>
         <header className="header header-sticky section">
             <nav className="header-box container header-line">
                 <div className="header-box__container">
-                    <button onClick={handleClick(setIsShown)} className="header-box__container-logo svg-box button button-img menu-navigation__button" id="menu-navigation__button">
-                        <Header_menu />
-                        <img src={Header_logo} alt="" className="" />
+                    <button className="header-box__container-logo svg-box button button-img menu-navigation__button" id="menu-navigation__button">
+                        <Header_menu onClick={handleClick(setIsShown)}/>
+                        <a href="/" className="">
+                            <img src={Header_logo} alt="" className="" />
+                        </a>
                     </button>
                     <div className="form-search">
                         <button className="svg-box button form-search__button">
@@ -39,10 +40,10 @@ export function Header(props) {
                     <div className="header-box__container">
                         <a href="" className="svg-box button button-img">
                             <Header_notifications />
-                            <div className="button-img__count">{header_data_user[0]}</div>
+                            <div className="button-img__count">{header_data_user}</div>
                         </a>
-                        <a href="" className="button button-img header-box__container-people">
-                            <img src={header_data_user[1]} alt="" className="full-img" />
+                        <a href="/user/1" className="button button-img header-box__container-people svg-box">
+                            <Header_User/>
                         </a>
                     </div>
                 </div>

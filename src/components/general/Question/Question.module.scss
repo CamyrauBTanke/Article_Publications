@@ -7,7 +7,7 @@
         gap: $padding-middle;
         padding: $padding-middle;
         @media (max-width: 650px) {
-            flex-direction: column-reverse;;
+            flex-direction: column-reverse;
         }
         &__description{
             width: 100%;
