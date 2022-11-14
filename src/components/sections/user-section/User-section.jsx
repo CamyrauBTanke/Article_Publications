@@ -24,16 +24,15 @@ export function User_section(props) {
 
     const user_data = [
         "Xoxot",
-        "shfbsidfbidbfodnsfimsd ifim dsfn dsufn ds fsdu",
-        12,
-        15,
+        "Люблю спрашивать и получать ответы. Таков уж я по натуре. Любознательный. Ничего не моуг с собой поделать. И вообще Clash of Clans лучшая мобильная стратегия как по мне.",
+        2,
+        0,
         "https://www.instagram.com/Camyrau_B_Tanke/",
         "https://t.me/Camyrau_B_Tanke",
         "https://www.linkedin.com/in/vladyslav-hunko-4521a8250",
         "https://ru-ru.facebook.com/",
         "https://github.com/CamyrauBTanke",
         "https://www.youtube.com/channel/UCCIaTyFJqvO1SanxoltkOAA",
-        2
     ]
 
     return (
@@ -42,33 +41,14 @@ export function User_section(props) {
                 <div className="user-informations">
                     <div className="user-informations__img">
                         <div className="user-informations__img-level">
-                            <p className="user-informations__img-level__text">{user_data[10]}</p>
+                            <p className="user-informations__img-level__text">0</p>
                         </div>
                         <img src={User_Photo} alt="" className="full-img" />
                     </div>
                     <div className="user-informations__info">
                         <h2 className="user-informations__info-nikname">{user_data[0]}</h2>
                         <p className="user-informations__info-text">{user_data[1]}</p>
-                        <div className="user-informations__info-network">
-                            <a href={user_data[4]} target="_blank" className="button button-img svg-box">
-                                <User_Instagram />
-                            </a>
-                            <a href={user_data[5]} target="_blank" className="button button-img svg-box">
-                                <User_Telegram />
-                            </a>
-                            <a href={user_data[6]} target="_blank" className="button button-img svg-box">
-                                <User_Linkedin />
-                            </a>
-                            <a href={user_data[7]} target="_blank" className="button button-img svg-box">
-                                <User_Link />
-                            </a>
-                            <a href={user_data[8]} target="_blank" className="button button-img svg-box">
-                                <User_GitHub />
-                            </a>
-                            <a href={user_data[9]} target="_blank" className="button button-img svg-box">
-                                <User_YouTube />
-                            </a>
-                        </div>
+                        
                         <div className="user-informations__info-statistic">
                             <p className="user-informations__info-statistic__text">{user_section_data.user_section_data_questions}: {user_data[2]}</p>
                             <p className="user-informations__info-statistic__text">{user_section_data.user_section_data_answers}: {user_data[3]}</p>
@@ -90,6 +70,9 @@ export function User_section(props) {
                             <button onClick={handleClick(setIsShown_3)} className="button button-border">
                                 <p className="button-text">{user_section_data.user_section_data_button_edit_data}</p>
                             </button>
+                            <button className="button button-border">
+                                <p className="button-text">LogOut</p>
+                            </button>
                         </div>
                         <button onClick={handleClick(setIsShown)} className="button-img__condition button user-work__navigation-menu">
                             <User_button_menu/>
@@ -108,6 +91,9 @@ export function User_section(props) {
                                 </button>
                                 <button onClick={handleClick(setIsShown_3)} className="button button-menu">
                                     <p className="button-text">{user_section_data.user_section_data_button_edit_data}</p>
+                                </button>
+                                <button className="button button-menu">
+                                    <p className="button-text">LogOut</p>
                                 </button>
                             </div>
                         ) } </>}
@@ -128,3 +114,26 @@ export function User_section(props) {
         </section>
     );
 }
+
+/*
+<div className="user-informations__info-network">
+    <a href={user_data[4]} target="_blank" className="button button-img svg-box">
+        <User_Instagram />
+    </a>
+    <a href={user_data[5]} target="_blank" className="button button-img svg-box">
+        <User_Telegram />
+    </a>
+    <a href={user_data[6]} target="_blank" className="button button-img svg-box">
+        <User_Linkedin />
+    </a>
+    <a href={user_data[7]} target="_blank" className="button button-img svg-box">
+        <User_Link />
+    </a>
+    <a href={user_data[8]} target="_blank" className="button button-img svg-box">
+        <User_GitHub />
+    </a>
+    <a href={user_data[9]} target="_blank" className="button button-img svg-box">
+        <User_YouTube />
+    </a>
+</div>
+*/

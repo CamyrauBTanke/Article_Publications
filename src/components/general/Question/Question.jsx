@@ -8,21 +8,21 @@ export function Questions(){
     const questionsData = [
         {
             id: "Qestions_0121212",
-            like: 19,
-            dizlike: 1,
-            answer: 3,
-            title: 'привет ебаный мир',
-            text: 'Тег <textarea>определяет элемент управления многострочным вводом текста.Этот <textarea>элемент часто используется в форме для сбора пользовательских данных, таких как комментарии или обзоры.Текстовая область может содержать неограниченное количество символов, а текст отображается шрифтом фиксированной ширины (обычно Courier).',
-            teg: ['js', 'android', 'Vue', 'FSSD SAD', 'Vue']
+            like: 3,
+            dizlike: 0,
+            answer: 1,
+            title: 'Как сносить 13тх в Clash of Clans с помощью Гибрида или Лава+Шары',
+            text: 'Хотелось бы услышать короткий ответ по моему вопросы. Армия фулл.',
+            teg: ['Clash of Clans']
         },
         {
             id: "Qestions_0121213",
-            like: 19,
-            dizlike: 1,
-            answer: 3,
-            title: 'tdtfugyhu jsfgyhudsfgyhu jdshfu jkdshfujk dsghfuj hdsf huyds',
-            text: 'tdtfugyhu rqtewyri;oulikytrqylukjgweqwryfsdtyfue5w364tiuu5253e64rtu jdshfu jkdshfujk dsghfuj hdsf huydstdtfugyhu jsfgyhudsfgyhu jdshfu jkdshfujk dsghfuj hdsf huyds tdtfugyhu jsfgyhudsfgyhu jdshfu jkdshfujk dsghfuj hdsf huyds',
-            teg: ['js', 'android', 'Vue']
+            like: 2,
+            dizlike: 0,
+            answer: 0,
+            title: 'Ратуша/Великая адская башня (14 ТХ)',
+            text: 'Великая адская башня заставит ваших врагов почувствовать себя зефирками, напавшими на костер. При уничтожении разносит ратушу в щепки взрывом, который на некоторое время замедляет все в округе',
+            teg: ['Clash of Clans', 'Дэф']
         }
     ];
 

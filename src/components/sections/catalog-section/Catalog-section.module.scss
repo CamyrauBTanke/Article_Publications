@@ -32,3 +32,15 @@
         }
     }
 }
+
+.flex-box{
+    display: flex;
+    gap: $padding-small;
+}
+
+.flex-box-catalog{
+    display: flex;
+    gap: $padding-huge;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -5,21 +5,15 @@ export function User_teg_statistic(props) {
     const user_teg_data = [
         {
             id_teg: 123214456,
-            name_teg: "js",
-            questions_teg: 32,
-            answer_teg: 2
-        },
-        {
-            id_teg: 12112132,
-            name_teg: "Vue.js",
+            name_teg: "Clash of Clans",
             questions_teg: 2,
-            answer_teg: 1
+            answer_teg: 0
         },
         {
             id_teg: 123445445,
-            name_teg: "jsx",
-            questions_teg: 332,
-            answer_teg: 3
+            name_teg: "Дэф",
+            questions_teg: 1,
+            answer_teg: 0
         }
     ]
     return (

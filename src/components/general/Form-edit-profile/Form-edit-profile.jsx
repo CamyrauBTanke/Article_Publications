@@ -32,60 +32,14 @@ export function Form_edit_profile(props) {
                     <h3 className="form__edit-user__title">{form_edit_profile_data.form_edit_profile_data_name_title}</h3>
                     <div className="form__edit-user__network-item__container">
                         <Form_user_edit_Name/>
-                        <input type="text" className="" name="edit_user_data_name" placeholder={form_edit_profile_data.form_edit_profile_data_name}/>
+                        <input type="text" className="" value="Xoxot" name="edit_user_data_name" placeholder={form_edit_profile_data.form_edit_profile_data_name}/>
                     </div>
                 </div>
                 <div className="form__edit-user__container-box">
                     <h3 className="form__edit-user__title">{form_edit_profile_data.form_edit_profile_data_description_title}</h3>
                     <div className="form__edit-user__network-item__container">
                         <Form_user_edit_Description/>
-                        <input type="text" className="" name="edit_user_data_description" placeholder={form_edit_profile_data.form_edit_profile_data_description}/>
-                    </div>
-                </div>
-            </div>
-
-            <h2 className="form__edit-user__blok-title">{form_edit_profile_data.form_edit_profile_data_blok_link}</h2>
-            <div className="form__edit-user__network box-shadow">
-                <div className="form__edit-user__network-item">
-                    <h3 className="form__edit-user__title">{form_edit_profile_data.form_edit_profile_data_instagram_title}</h3>
-                    <div className="form__edit-user__network-item__container">
-                        <Form_user_edit_Instagram/>
-                        <input type="url" className="form__edit-user__network-input form__edit-user__network-instagram" name="edit_user_data_instagram" placeholder={form_edit_profile_data.form_edit_profile_data_instagram}/>
-                    </div>
-                </div>
-                <div className="form__edit-user__network-item">
-                    <h3 className="form__edit-user__title">{form_edit_profile_data.form_edit_profile_data_telegram_title}</h3>
-                    <div className="form__edit-user__network-item__container">
-                        <Form_user_edit_Telegram/>
-                        <input type="url" className="form__edit-user__network-input form__edit-user__network-telegram" name="edit_user_data_telegram" placeholder={form_edit_profile_data.form_edit_profile_data_telegram}/>
-                    </div>
-                </div>
-                <div className="form__edit-user__network-item">
-                    <h3 className="form__edit-user__title">{form_edit_profile_data.form_edit_profile_data_linkedln_title}</h3>
-                    <div className="form__edit-user__network-item__container">
-                        <Form_user_edit_Linkedin/>
-                        <input type="url" className="form__edit-user__network-input form__edit-user__network-linkedln" name="edit_user_data_linkedln" placeholder={form_edit_profile_data.form_edit_profile_data_linkedln}/>
-                    </div>
-                </div>
-                <div className="form__edit-user__network-item">
-                    <h3 className="form__edit-user__title">{form_edit_profile_data.form_edit_profile_data_website_title}</h3>
-                    <div className="form__edit-user__network-item__container">
-                        <Form_user_edit_Website/>
-                        <input type="url" className="form__edit-user__network-input form__edit-user__network-website" name="edit_user_data_website" placeholder={form_edit_profile_data.form_edit_profile_data_website}/>
-                    </div>
-                </div>
-                <div className="form__edit-user__network-item">
-                    <h3 className="form__edit-user__title">{form_edit_profile_data.form_edit_profile_data_github_title}</h3>
-                    <div className="form__edit-user__network-item__container">
-                        <Form_user_edit_GitHub/>
-                        <input type="url" className="form__edit-user__network-input form__edit-user__network-github" name="edit_user_data_github" placeholder={form_edit_profile_data.form_edit_profile_data_github}/>
-                    </div>
-                </div>
-                <div className="form__edit-user__network-item">
-                    <h3 className="form__edit-user__title">{form_edit_profile_data.form_edit_profile_data_youtobe_title}</h3>
-                    <div className="form__edit-user__network-item__container">
-                        <Form_user_edit_Mail/>
-                        <input type="email" className="form__edit-user__network-input form__edit-user__network-mail" name="edit_user_data_mail" placeholder={form_edit_profile_data.form_edit_profile_data_mail}/>
+                        <input type="text" className="" value="Люблю спрашивать и получать ответы. Таков уж я по натуре. Любознательный. Ничего не моуг с собой поделать. И вообще Clash of Clans лучшая мобильная стратегия как по мне." name="edit_user_data_description" placeholder={form_edit_profile_data.form_edit_profile_data_description}/>
                     </div>
                 </div>
             </div>
@@ -95,4 +49,52 @@ export function Form_edit_profile(props) {
             </div>
         </form>
     );
-}  
+}
+
+/*
+<h2 className="form__edit-user__blok-title">{form_edit_profile_data.form_edit_profile_data_blok_link}</h2>
+<div className="form__edit-user__network box-shadow">
+    <div className="form__edit-user__network-item">
+        <h3 className="form__edit-user__title">{form_edit_profile_data.form_edit_profile_data_instagram_title}</h3>
+        <div className="form__edit-user__network-item__container">
+            <Form_user_edit_Instagram/>
+            <input type="url" value="https://www.instagram.com/Camyrau_B_Tanke/" className="form__edit-user__network-input form__edit-user__network-instagram" name="edit_user_data_instagram" placeholder={form_edit_profile_data.form_edit_profile_data_instagram}/>
+        </div>
+    </div>
+    <div className="form__edit-user__network-item">
+        <h3 className="form__edit-user__title">{form_edit_profile_data.form_edit_profile_data_telegram_title}</h3>
+        <div className="form__edit-user__network-item__container">
+            <Form_user_edit_Telegram/>
+            <input type="url" value="https://t.me/Camyrau_B_Tanke" className="form__edit-user__network-input form__edit-user__network-telegram" name="edit_user_data_telegram" placeholder={form_edit_profile_data.form_edit_profile_data_telegram}/>
+        </div>
+    </div>
+    <div className="form__edit-user__network-item">
+        <h3 className="form__edit-user__title">{form_edit_profile_data.form_edit_profile_data_linkedln_title}</h3>
+        <div className="form__edit-user__network-item__container">
+            <Form_user_edit_Linkedin/>
+            <input type="url" value="https://www.linkedin.com/in/vladyslav-hunko-4521a8250" className="form__edit-user__network-input form__edit-user__network-linkedln" name="edit_user_data_linkedln" placeholder={form_edit_profile_data.form_edit_profile_data_linkedln}/>
+        </div>
+    </div>
+    <div className="form__edit-user__network-item">
+        <h3 className="form__edit-user__title">{form_edit_profile_data.form_edit_profile_data_website_title}</h3>
+        <div className="form__edit-user__network-item__container">
+            <Form_user_edit_Website/>
+            <input type="url" value="" className="form__edit-user__network-input form__edit-user__network-website" name="edit_user_data_website" placeholder={form_edit_profile_data.form_edit_profile_data_website}/>
+        </div>
+    </div>
+    <div className="form__edit-user__network-item">
+        <h3 className="form__edit-user__title">{form_edit_profile_data.form_edit_profile_data_github_title}</h3>
+        <div className="form__edit-user__network-item__container">
+            <Form_user_edit_GitHub/>
+            <input type="url" value="https://github.com/CamyrauBTanke" className="form__edit-user__network-input form__edit-user__network-github" name="edit_user_data_github" placeholder={form_edit_profile_data.form_edit_profile_data_github}/>
+        </div>
+    </div>
+    <div className="form__edit-user__network-item">
+        <h3 className="form__edit-user__title">{form_edit_profile_data.form_edit_profile_data_youtobe_title}</h3>
+        <div className="form__edit-user__network-item__container">
+            <Form_user_edit_Mail/>
+            <input type="email" value="" className="form__edit-user__network-input form__edit-user__network-mail" name="edit_user_data_mail" placeholder={form_edit_profile_data.form_edit_profile_data_mail}/>
+        </div>
+    </div>
+</div>
+*/

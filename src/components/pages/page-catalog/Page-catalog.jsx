@@ -6,7 +6,10 @@ export function Page_catalog(props) {
     const {page_catalog_data} = props;
     return (
         <div className="catalog-posts page-section section">
-            <h2 className="container catalog-posts__title">{page_catalog_data.catalog_posts_page_title}</h2>
+            <div className="container page-question__container">
+                <h2 className="catalog-posts__title">{page_catalog_data.catalog_posts_page_title}</h2>
+                <button className="button button-border">Создать Тег</button>
+            </div>
             <div className="container catalog-posts__container">
                 <form action="" className="catalog-posts__container-search">
                     <div className="form__edit-user__network-item__container">
